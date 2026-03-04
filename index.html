@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LUMIÈRE — премиальный центр красоты и здоровья. Записывайтесь онлайн." />
+  <title>LUMIÈRE — Центр Красоты и Здоровья</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <div class="preloader" id="preloader">
+    <div class="preloader__inner">
+      <div class="preloader__logo">L</div>
+      <div class="preloader__bar"><span></span></div>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#hero" class="header__logo">
+        <span class="header__logo-mark">✦</span>
+        LUMIÈRE
+      </a>
+
+      <nav class="header__nav" id="nav">
+        <ul class="header__nav-list">
+          <li><a href="#about"    class="header__nav-link">О нас</a></li>
+          <li><a href="#services" class="header__nav-link">Услуги</a></li>
+          <li><a href="#team"     class="header__nav-link">Специалисты</a></li>
+          <li><a href="#reviews"  class="header__nav-link">Отзывы</a></li>
+          <li><a href="#booking"  class="header__nav-link">Запись</a></li>
+          <li><a href="#contacts" class="header__nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <a href="#booking" class="btn btn--outline header__cta">Записаться</a>
+
+      <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero__bg" id="heroBg"></div>
+    <div class="hero__overlay"></div>
+
+    <div class="container hero__content">
+      <p class="hero__eyebrow reveal-fade">Премиальный центр красоты</p>
+      <h1 class="hero__title reveal-up">
+        Искусство<br />
+        <em>совершенства</em><br />
+        для вас
+      </h1>
+      <p class="hero__subtitle reveal-up reveal-up--delay-1">
+        Индивидуальный подход. Передовые технологии.<br />Результат, который говорит сам за себя.
+      </p>
+      <div class="hero__actions reveal-up reveal-up--delay-2">
+        <a href="#booking"  class="btn btn--primary">Записаться онлайн</a>
+        <a href="#services" class="btn btn--ghost">Наши услуги</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll-hint">
+      <span>Скролл</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about__grid">
+
+        <div class="about__text-col">
+          <p class="section__label scroll-reveal">О нас</p>
+          <h2 class="section__title scroll-reveal">
+            Мы создаём<br /><em>пространство красоты</em>
+          </h2>
+          <p class="about__lead scroll-reveal">
+            LUMIÈRE — это место, где профессиональный уход встречается с настоящей заботой о вас.
+            Наши специалисты используют только сертифицированные препараты и современное оборудование.
+          </p>
+          <p class="about__body scroll-reveal">
+            Каждая процедура — это ритуал, тщательно подобранный под ваши индивидуальные потребности.
+            Мы работаем с 2015 года и за это время помогли тысячам клиентов почувствовать себя лучше.
+          </p>
+          <a href="#booking" class="btn btn--primary scroll-reveal">Записаться сейчас</a>
+        </div>
+
+        <div class="about__features">
+          <div class="about__feature scroll-reveal">
+            <div class="about__feature-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M13 20l5 5 9-10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="about__feature-title">Сертифицированные мастера</h4>
+              <p class="about__feature-text">Постоянное обучение, международные сертификаты.</p>
+            </div>
+          </div>
+
+          <div class="about__feature scroll-reveal">
+            <div class="about__feature-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M20 12v8l5 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="about__feature-title">Удобное время записи</h4>
+              <p class="about__feature-text">Работаем 7 дней в неделю, с 9:00 до 21:00.</p>
+            </div>
+          </div>
+
+          <div class="about__feature scroll-reveal">
+            <div class="about__feature-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M20 28c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M24 24l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="about__feature-title">Премиальные препараты</h4>
+              <p class="about__feature-text">Только сертифицированная косметика A-класса.</p>
+            </div>
+          </div>
+
+          <div class="about__feature scroll-reveal">
+            <div class="about__feature-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M20 14c-3.3 0-6 2.7-6 6 0 2.5 1.5 4.6 3.7 5.5L20 28l2.3-2.5C24.5 24.6 26 22.5 26 20c0-3.3-2.7-6-6-6z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="about__feature-title">Индивидуальный подход</h4>
+              <p class="about__feature-text">Программа, разработанная именно для вас.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="services section section--dark" id="services">
+    <div class="container">
+      <div class="section__header scroll-reveal">
+        <p class="section__label section__label--light">Что мы предлагаем</p>
+        <h2 class="section__title section__title--light">Наши <em>услуги</em></h2>
+      </div>
+
+      <div class="services__grid">
+
+        <div class="service-card scroll-reveal">
+          <div class="service-card__num">01</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 8C15.2 8 8 15.2 8 24s7.2 16 16 16 16-7.2 16-16S32.8 8 24 8z" stroke="currentColor" stroke-width="1.5"/><path d="M24 16c-4.4 0-8 3.6-8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="service-card__title">Уход за кожей лица</h3>
+          <p class="service-card__desc">Профессиональные чистки, пилинги и омолаживающие процедуры для сияющей кожи.</p>
+          <button class="service-card__btn" data-modal="service" data-title="Уход за кожей лица" data-desc="Профессиональные чистки, механические и аппаратные пилинги, RF-лифтинг, мезотерапия. Индивидуальный протокол ухода для вашего типа кожи." data-price="от 2 500 ₽">Подробнее</button>
+        </div>
+
+        <div class="service-card scroll-reveal">
+          <div class="service-card__num">02</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M32 10l6 6-20 20-8 2 2-8L32 10z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="service-card__title">Инъекционная косметология</h3>
+          <p class="service-card__desc">Ботулинотерапия, биоревитализация и контурная пластика лица.</p>
+          <button class="service-card__btn" data-modal="service" data-title="Инъекционная косметология" data-desc="Ботулинотерапия Botox/Dysport, биоревитализация Juvederm/Restylane, контурная пластика губ и скул, мезотерапия волос. Только сертифицированные препараты." data-price="от 5 000 ₽">Подробнее</button>
+        </div>
+
+        <div class="service-card scroll-reveal">
+          <div class="service-card__num">03</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 12v24M12 24h24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h3 class="service-card__title">Лазерная эпиляция</h3>
+          <p class="service-card__desc">Безболезненное удаление волос на любых участках тела.</p>
+          <button class="service-card__btn" data-modal="service" data-title="Лазерная эпиляция" data-desc="Диодный лазер нового поколения. Безболезненно, быстро, эффективно. Подходит для всех типов кожи и волос. Постоянный результат после курса." data-price="от 1 800 ₽">Подробнее</button>
+        </div>
+
+        <div class="service-card scroll-reveal">
+          <div class="service-card__num">04</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M16 12c0 4.4 3.6 8 8 8s8-3.6 8-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M10 36c0-7.7 6.3-14 14-14s14 6.3 14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="service-card__title">Барберский зал</h3>
+          <p class="service-card__desc">Мужские стрижки, уход за бородой и классическое бритьё.</p>
+          <button class="service-card__btn" data-modal="service" data-title="Барберский зал" data-desc="Классические и современные мужские стрижки, моделирование бороды, горячее бритьё с полотенцем. Relaxing experience для настоящих джентльменов." data-price="от 1 500 ₽">Подробнее</button>
+        </div>
+
+        <div class="service-card scroll-reveal">
+          <div class="service-card__num">05</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 10c-7.7 0-14 6.3-14 14 0 5.5 3.2 10.3 7.9 12.7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M24 10c7.7 0 14 6.3 14 14 0 5.5-3.2 10.3-7.9 12.7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="24" cy="38" r="2" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h3 class="service-card__title">SPA-программы</h3>
+          <p class="service-card__desc">Антистресс, детокс и омолаживающие SPA-ритуалы.</p>
+          <button class="service-card__btn" data-modal="service" data-title="SPA-программы" data-desc="Комплексные SPA-ритуалы: обёртывания, массажи, ароматерапия. Программы детокс, антивозрастные и расслабляющие. Идеально для восстановления после стресса." data-price="от 3 500 ₽">Подробнее</button>
+        </div>
+
+        <div class="service-card scroll-reveal">
+          <div class="service-card__num">06</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M18 12c0 0 2 10-2 16s-4 12-4 12M24 10c0 0 0 12 2 18s2 10 2 10M30 12c0 0-2 10 2 16s4 12 4 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="service-card__title">Уход за волосами</h3>
+          <p class="service-card__desc">Стрижки, окрашивание, кератиновое выпрямление и лечение волос.</p>
+          <button class="service-card__btn" data-modal="service" data-title="Уход за волосами" data-desc="Авторские стрижки и укладки, балаяж и сложное окрашивание, кератиновое выпрямление, лечебные маски Olaplex. Работаем с волосами любого типа." data-price="от 2 000 ₽">Подробнее</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="team section" id="team">
+    <div class="container">
+      <div class="section__header scroll-reveal">
+        <p class="section__label">Наша команда</p>
+        <h2 class="section__title">Мастера своего <em>дела</em></h2>
+      </div>
+
+      <div class="team__grid">
+
+        <div class="team-card scroll-reveal">
+          <div class="team-card__photo">
+            <div class="team-card__photo-placeholder" style="--hue:200">АС</div>
+          </div>
+          <div class="team-card__info">
+            <h3 class="team-card__name">Анна Соколова</h3>
+            <p class="team-card__role">Косметолог-эстетист</p>
+            <p class="team-card__exp">Опыт: 9 лет</p>
+            <div class="team-card__socials">
+              <a href="#" class="team-card__social" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+              </a>
+              <a href="#" class="team-card__social" aria-label="VK">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 8h3.5s2.5 5 3 7c.5-2 2-7 2-7H16s-2.5 8-4 10c-1.5-2-2-4-2-4s-1 2-2 4C6.5 16 4 8 4 8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card scroll-reveal">
+          <div class="team-card__photo">
+            <div class="team-card__photo-placeholder" style="--hue:30">МК</div>
+          </div>
+          <div class="team-card__info">
+            <h3 class="team-card__name">Михаил Крылов</h3>
+            <p class="team-card__role">Барбер</p>
+            <p class="team-card__exp">Опыт: 7 лет</p>
+            <div class="team-card__socials">
+              <a href="#" class="team-card__social" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+              </a>
+              <a href="#" class="team-card__social" aria-label="VK">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 8h3.5s2.5 5 3 7c.5-2 2-7 2-7H16s-2.5 8-4 10c-1.5-2-2-4-2-4s-1 2-2 4C6.5 16 4 8 4 8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card scroll-reveal">
+          <div class="team-card__photo">
+            <div class="team-card__photo-placeholder" style="--hue:160">ЕВ</div>
+          </div>
+          <div class="team-card__info">
+            <h3 class="team-card__name">Елена Волкова</h3>
+            <p class="team-card__role">Трихолог</p>
+            <p class="team-card__exp">Опыт: 11 лет</p>
+            <div class="team-card__socials">
+              <a href="#" class="team-card__social" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+              </a>
+              <a href="#" class="team-card__social" aria-label="VK">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 8h3.5s2.5 5 3 7c.5-2 2-7 2-7H16s-2.5 8-4 10c-1.5-2-2-4-2-4s-1 2-2 4C6.5 16 4 8 4 8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card scroll-reveal">
+          <div class="team-card__photo">
+            <div class="team-card__photo-placeholder" style="--hue:290">НО</div>
+          </div>
+          <div class="team-card__info">
+            <h3 class="team-card__name">Наталья Орлова</h3>
+            <p class="team-card__role">SPA-терапевт</p>
+            <p class="team-card__exp">Опыт: 6 лет</p>
+            <div class="team-card__socials">
+              <a href="#" class="team-card__social" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+              </a>
+              <a href="#" class="team-card__social" aria-label="VK">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 8h3.5s2.5 5 3 7c.5-2 2-7 2-7H16s-2.5 8-4 10c-1.5-2-2-4-2-4s-1 2-2 4C6.5 16 4 8 4 8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews section section--cream" id="reviews">
+    <div class="container">
+      <div class="section__header scroll-reveal">
+        <p class="section__label">Отзывы клиентов</p>
+        <h2 class="section__title">Они нам <em>доверяют</em></h2>
+      </div>
+
+      <div class="slider" id="reviewSlider">
+        <div class="slider__track" id="sliderTrack">
+
+          <div class="slider__slide">
+            <div class="review-card">
+              <div class="review-card__stars">★★★★★</div>
+              <p class="review-card__text">«Давно ищу косметолога, которому можно доверять. Анна — это именно тот специалист. После курса мезотерапии кожа преобразилась. Рекомендую всем своим подругам!»</p>
+              <div class="review-card__author">
+                <div class="review-card__avatar">ОМ</div>
+                <div>
+                  <strong>Ольга М.</strong>
+                  <span>постоянный клиент</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider__slide">
+            <div class="review-card">
+              <div class="review-card__stars">★★★★★</div>
+              <p class="review-card__text">«Первый раз был в барберском зале — остался очень доволен. Михаил — профессионал высшего класса, слушает и понимает с полуслова. Теперь только к нему!»</p>
+              <div class="review-card__author">
+                <div class="review-card__avatar">АП</div>
+                <div>
+                  <strong>Алексей П.</strong>
+                  <span>новый клиент</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider__slide">
+            <div class="review-card">
+              <div class="review-card__stars">★★★★★</div>
+              <p class="review-card__text">«SPA-программа "Антистресс" — это был настоящий подарок для себя. Атмосфера, уход, результат — всё на высшем уровне. Вернусь обязательно.»</p>
+              <div class="review-card__author">
+                <div class="review-card__avatar">ЕК</div>
+                <div>
+                  <strong>Екатерина К.</strong>
+                  <span>постоянный клиент</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider__slide">
+            <div class="review-card">
+              <div class="review-card__stars">★★★★★</div>
+              <p class="review-card__text">«Лазерная эпиляция прошла абсолютно безболезненно. Результат виден уже после первой процедуры. Персонал очень внимательный и приветливый.»</p>
+              <div class="review-card__author">
+                <div class="review-card__avatar">МС</div>
+                <div>
+                  <strong>Мария С.</strong>
+                  <span>клиент, 3 месяца</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="slider__controls">
+          <button class="slider__btn slider__btn--prev" id="sliderPrev" aria-label="Предыдущий">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="slider__dots" id="sliderDots"></div>
+          <button class="slider__btn slider__btn--next" id="sliderNext" aria-label="Следующий">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="booking section" id="booking">
+    <div class="container">
+      <div class="booking__inner">
+        <div class="booking__text scroll-reveal">
+          <p class="section__label">Онлайн-запись</p>
+          <h2 class="section__title">Запишитесь<br /><em>прямо сейчас</em></h2>
+          <p class="booking__desc">Оставьте свои данные и мы свяжемся с вами в течение 15 минут для подтверждения записи.</p>
+
+          <ul class="booking__list">
+            <li>✦ Бесплатная консультация перед процедурой</li>
+            <li>✦ Подбор оптимальной программы</li>
+            <li>✦ Гибкий график, включая выходные</li>
+          </ul>
+        </div>
+
+        <form class="booking__form scroll-reveal" id="bookingForm" novalidate>
+          <div class="form__group">
+            <label class="form__label" for="name">Ваше имя</label>
+            <input class="form__input" type="text" id="name" name="name" placeholder="Иван Иванов" autocomplete="name" />
+            <span class="form__error" id="nameError"></span>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="phone">Телефон</label>
+            <input class="form__input" type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" />
+            <span class="form__error" id="phoneError"></span>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="service">Услуга</label>
+            <div class="form__select-wrap">
+              <select class="form__input form__select" id="service" name="service">
+                <option value="">— Выберите услугу —</option>
+                <option value="face">Уход за кожей лица</option>
+                <option value="injection">Инъекционная косметология</option>
+                <option value="laser">Лазерная эпиляция</option>
+                <option value="barber">Барберский зал</option>
+                <option value="spa">SPA-программы</option>
+                <option value="hair">Уход за волосами</option>
+              </select>
+              <svg class="form__select-arrow" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <span class="form__error" id="serviceError"></span>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="message">Комментарий <span class="form__optional">(необязательно)</span></label>
+            <textarea class="form__input form__textarea" id="message" name="message" placeholder="Пожелания или вопросы..."></textarea>
+          </div>
+
+          <button class="btn btn--primary btn--full" type="submit" id="submitBtn">
+            <span>Записаться на приём</span>
+            <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+
+          <p class="form__privacy">Нажимая кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts section section--dark" id="contacts">
+    <div class="container">
+      <div class="contacts__grid">
+
+        <div class="contacts__info scroll-reveal">
+          <p class="section__label section__label--light">Контакты</p>
+          <h2 class="section__title section__title--light">Найти <em>нас</em></h2>
+
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <div class="contacts__icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.3 7 13 7 13s7-7.7 7-13c0-3.9-3.1-7-7-7z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.5"/></svg>
+              </div>
+              <div>
+                <strong>Адрес</strong>
+                <span>ул. Пречистенка, 17, Москва</span>
+              </div>
+            </li>
+
+            <li class="contacts__item">
+              <div class="contacts__icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.1-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 2.9a2 2 0 01-.4 2.1L8.1 9.9a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.9.6 2.9.7a2 2 0 011.7 2z" stroke="currentColor" stroke-width="1.5"/></svg>
+              </div>
+              <div>
+                <strong>Телефон</strong>
+                <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+              </div>
+            </li>
+
+            <li class="contacts__item">
+              <div class="contacts__icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.5"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="1.5"/></svg>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:hello@lumiere.ru">hello@lumiere.ru</a>
+              </div>
+            </li>
+
+            <li class="contacts__item">
+              <div class="contacts__icon">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><polyline points="12,6 12,12 16,14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+              <div>
+                <strong>Часы работы</strong>
+                <span>Пн–Вс: 9:00 — 21:00</span>
+              </div>
+            </li>
+          </ul>
+
+          <a href="https://wa.me/74951234567" class="btn btn--whatsapp" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.3 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.1 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.6.2-1.2.1-1.3-.1-.1-.2-.2-.5-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.4 5.3L2 22l4.8-1.4C8.3 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.7 0-3.4-.5-4.8-1.3l-.3-.2-3.2.9.9-3.1-.2-.4C3.5 14.5 3 13.3 3 12 3 7 7 3 12 3s9 4 9 9-4 9-9 9z"/></svg>
+            Написать в WhatsApp
+          </a>
+        </div>
+
+        <div class="contacts__map scroll-reveal">
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=37.58,55.74,37.62,55.76&layer=mapnik"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            loading="lazy"
+            title="Карта"
+          ></iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__top">
+        <a href="#hero" class="footer__logo">
+          <span class="header__logo-mark">✦</span>
+          LUMIÈRE
+        </a>
+        <nav class="footer__nav">
+          <a href="#about">О нас</a>
+          <a href="#services">Услуги</a>
+          <a href="#team">Специалисты</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#booking">Запись</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+        <div class="footer__socials">
+          <a href="#" class="footer__social" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          </a>
+          <a href="#" class="footer__social" aria-label="VK">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 8h3.5s2.5 5 3 7c.5-2 2-7 2-7H16s-2.5 8-4 10c-1.5-2-2-4-2-4s-1 2-2 4C6.5 16 4 8 4 8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#" class="footer__social" aria-label="Telegram">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M21.4 2.8L2 10.2c-1.2.5-1.2 1.3-.2 1.6l4.9 1.5 11.4-7.2c.5-.3 1-.1.6.2L8 16.1v3.2c0 .9 1 1.1 1.4.5l2.4-2.4 4.7 3.5c.9.5 1.5.2 1.7-.8L22 4c.3-1.3-.5-1.9-2.6-1.2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 LUMIÈRE. Все права защищены.</p>
+        <a href="#">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="serviceModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal__backdrop" id="modalBackdrop"></div>
+    <div class="modal__box">
+      <button class="modal__close" id="modalClose" aria-label="Закрыть">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+      <p class="modal__label">Услуга</p>
+      <h3 class="modal__title" id="modalTitle"></h3>
+      <p class="modal__desc" id="modalDesc"></p>
+      <div class="modal__price" id="modalPrice"></div>
+      <a href="#booking" class="btn btn--primary modal__cta" id="modalCta">Записаться</a>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">
+    <div class="toast__icon">✓</div>
+    <div>
+      <strong>Запись принята!</strong>
+      <p>Мы свяжемся с вами в течение 15 минут.</p>
+    </div>
+  </div>
+
+  <script src="js/slider.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
